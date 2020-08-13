@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+  box-sizing: border-box;
+}
+a{
+  padding-bottom: 12%;
+}
+.cuerpo{
+  display: flex;
+  justify-content: space-evenly;
+}
+.index{
+  padding-top: 7%;
+}
+body {
+ background-image: url('/mancha_azul.png');
+ background-repeat: no-repeat;
+ background-position: 227%;
+background-size: 91%;
+padding-top: 8%;
+background-position-y: 16%;
+}
+.barra{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  padding-left: 4%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.title{
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  color: rgb(56, 56, 194);
+  padding: 3%;
+}
+.caja{
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: solid;
+  text-align: center;
+  padding-bottom: 11%;
+}
+.alinear1{
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 5%;
+}
+.alinear2{
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.alinear3{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin: -10%;
+}
+button{
+  border-radius:50px;
+}
+.aciertoFallo{
+  font-size: 18px;
+}
+.aviso{
+  padding-bottom: 13%;
+}
+.cajaJuego{
+  padding-top: 8%;
+  padding-right: 12%;
+  justify-content: center;
+}
+img {
+width: 200px;
+height: 130px;
+padding-top: 4%;
+border: solid 20px;
+}
+.imagenes{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.botonBusq{
+  background-color:white;
+  font-family: 'Inter', sans-serif;
+  font-weight:500;
+  font-size:25px;
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.25s ease;
+  padding:6px;
+  margin-top:5px;
+  margin-bottom:40px;
+  width:19%;
+  text-align:center;
+  
+}
+.botonBusq2{
+  background-color:white;
+  font-family: 'Inter', sans-serif;
+  font-weight:300;
+  font-size:15px;
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.25s ease;
+  height: 43px;
+  margin-top:5px;
+  margin-bottom:4%;
+  width:37px;
+  text-align:center;
+  
+}
+.botonBusq:hover{
+  background: #D7D1C9;
+  cursor:pointer;
+}
+.registro{
+  display: flex;
+flex-direction: column;
+position: relative;
+right: 7%;
+padding-top: 12%;
+}
+#nombre{
+  margin-bottom: 4%;
+}
+#email{
+  margin-bottom: 4%;
+}
+#password{
+  margin-bottom: 4%;
+}
+.saludo{
+  padding-bottom: 3%;
+  color: #5656c1;
+}
+.niño{
+position: relative;
+right: 46%;
+top: 33%;
+height: 198px;
+width: 124%;
+}

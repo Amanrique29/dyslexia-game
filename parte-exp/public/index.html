@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Selecciona la letra correcta y completa la palabra</h1>
+    <div id="completar"></div>
+    <div id="respuesta"></div>
+    <script>
+        let palabras = document.getElementById('completar');
+
+        fetch('/juego').then(function(response){
+            return response.json();
+        }).then(function(data){
+            console.log(data);
+            let string = `<div><h2>${data[0].pregunta}</h2></div>`;
+            for ( i = 0; i < data[0].respuestas.length; i++){
+                string += `<button onclick='respuesta(${data[0].respuestas[i]})'>${data[0].respuestas[i]}</button>`
+            }
+            palabras.innerHTML = string;
+
+            function respuesta(res){
+                console.log(res);
+                if (res === data[0].respuestaCorrecta){
+                    document.getElementById('respuesta').innerHTML = `<h2>${data[0].palabraCompleta}</h2><p>¡Enhorabuena! Respuesta correcta</p>`;
+                } else {
+                    document.getElementById('respuesta').innerHTML = `<p>¡Respuesta incorrecta! Vuelve a intentarlo</p>`;
+                };
+            };
+        });
+    </script>
+</body>
+</html>
